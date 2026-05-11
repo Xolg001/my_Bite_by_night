@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про нас</title>
     <style>
-        /* Стилі ідентичні першій сторінці для цілісності дизайну */
-        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #007bff; color: #fff; padding: 1rem; text-align: center; }
-        nav { background: #444; padding: 0.5rem; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        }
+        header { 
+            background: #007bff; 
+            color: #fff; 
+            padding: 1rem; 
+            text-align: center; 
+        }
+        nav { 
+            background: #444; 
+            padding: 0.5rem; 
+            text-align: center; 
+        }
+        nav a { 
+            color: white; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
         nav a:hover { color: #007bff; }
-        .container { padding: 20px; max-width: 800px; margin: auto; background: white; min-height: 80vh; }
-        footer { text-align: center; padding: 10px; background: #333; color: white; }
+        .container { 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            background: white; 
+            min-height: 80vh; 
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1; /* Дозволяє текстовому блоку займати вільний простір */
+        }
+        .image-container {
+            text-align: center; /* Центрування картинки */
+            margin-top: 30px;
+            padding: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        footer { 
+            text-align: center; 
+            padding: 10px; 
+            background: #333; 
+            color: white; 
+        }
     </style>
 </head>
 <body>
@@ -27,15 +73,21 @@
 </nav>
 
 <div class="container">
-    <h2>Хто ми такі?</h2>
-    <p>Ми команда ентузіастів, що вчаться створювати круті речі в інтернеті.</p>
-    <h3>Наші цілі:</h3>
-    <ul>
-        <li>Вивчити HTML та CSS</li>
-        <li>Створити корисний контент</li>
-        <li>Стати професіоналами</li>
-    </ul>
-    <p><a href="index.html">Повернутися на головну</a></p>
+    <div class="content">
+        <h2>Хто ми такі?</h2>
+        <p>Ми команда ентузіастів, що вчаться створювати круті речі в інтернеті.</p>
+        <h3>Наші цілі:</h3>
+        <ul>
+            <li>Вивчити HTML та CSS</li>
+            <li>Створити корисний контент</li>
+            <li>Стати професіоналами</li>
+        </ul>
+        <p><a href="index.html">Повернутися на головну</a></p>
+    </div>
+
+    <div class="image-container">
+        <img src="изображение_2026-05-11_142702356.png" alt="Скріншот проекту">
+    </div>
 </div>
 
 <footer>
